@@ -73,7 +73,7 @@ with st.sidebar:
 
     st.markdown("---")
     st.subheader("Colour tuning")
-    gamma = st.slider("Sensitivity (gamma)", 0.4, 2.5, 1.5, 0.1)
+    gamma = st.slider("Sensitivity (gamma)", 0.4, 2.5, 2.0, 0.1)
     # gamma < 1 -> more contrast in the middle/high end
     # gamma > 1 -> more contrast near low end
 
