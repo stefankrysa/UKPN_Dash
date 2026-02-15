@@ -68,12 +68,12 @@ with st.sidebar:
     chosen = st.multiselect("Category", cats, default=cats)
 
     min_pop = st.slider("Minimum population", 0, int(df["population"].max()), 0, step=100)
-    max_points = st.slider("Max points on map (performance)", 500, 20000, 8000, step=500)
+    max_points = st.slider("Max points on map (performance)", 500, 20000, 16500, step=500)
     top_n = st.slider("Top-N priority table", 10, 200, 50, step=10)
 
     st.markdown("---")
     st.subheader("Colour tuning")
-    gamma = st.slider("Sensitivity (gamma)", 0.4, 2.5, 0.9, 0.1)
+    gamma = st.slider("Sensitivity (gamma)", 0.4, 2.5, 1.5, 0.1)
     # gamma < 1 -> more contrast in the middle/high end
     # gamma > 1 -> more contrast near low end
 
